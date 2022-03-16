@@ -36,13 +36,13 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./ressources/views/1.png)
-![Example screenshot](./ressources/views/2.png)
-![Example screenshot](./ressources/views/3.png)
-![Example screenshot](./ressources/views/4.png)
-![Example screenshot](./ressources/views/5.png)
-![Example screenshot](./ressources/views/6.png)
-![Example screenshot](./ressources/views/7.png)
+![Example screenshot](./resources/views/1.png)
+![Example screenshot](./resources/views/2.png)
+![Example screenshot](./resources/views/3.png)
+![Example screenshot](./resources/views/4.png)
+![Example screenshot](./resources/views/5.png)
+![Example screenshot](./resources/views/6.png)
+![Example screenshot](./resources/views/7.png)
 
 
 
