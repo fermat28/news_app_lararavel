@@ -36,7 +36,14 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./ressources/1.png)
+![Example screenshot](./ressources/2.png)
+![Example screenshot](./ressources/3.png)
+![Example screenshot](./ressources/4.png)
+![Example screenshot](./ressources/5.png)
+![Example screenshot](./ressources/6.png)
+![Example screenshot](./ressources/7.png)
+
 
 
 
