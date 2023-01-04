@@ -20,9 +20,7 @@
 
 ## Technologies Used
 - Laravel  - version 9.2
-- Php - version 2.0
-- Tech 3 - version 8.0.14
-
+- Php - version 8.0.14
 
 ## Features
 List the ready features here:
