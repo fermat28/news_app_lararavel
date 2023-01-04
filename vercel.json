@@ -1,9 +1,8 @@
 {
     "version": 2,
-     "builds": [
-        { "src": "/api/index.php", "use": "vercel-php@0.5.2" },
-        { "src": "/public/**", "use": "@vercel/static" }
-    ],
+      "functions": {
+        "api/*.php": { "runtime": "vercel-php@0.5.2" }
+    },
     "routes": [
         {
             "src": "/(css|js|vendor|assets|build)/(.*)",
@@ -14,6 +13,24 @@
             "dest": "/api/index.php"
         }
     ],
+     "scripts": {
+        "vercel": [
+          "@php -v",
+          "npm -v",
+          "npm install && npm run dev"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+if ($_GET['type'] === 'css') {
+    header("Content-type: text/css; charset: UTF-8");
+    echo require __DIR__ . '/../public/css/' . basename($_GET['file']);
+} else if ($_GET['type'] === 'js') {
+    header('Content-Type: application/javascript; charset: UTF-8');
+    echo require __DIR__ . '/../public/js/' . basename($_GET['file']);
+}
+} ,
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
