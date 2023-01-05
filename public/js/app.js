@@ -13,7 +13,7 @@ $('select').on('change', function() {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
         url: "/sourceId",
-        data: { source: source, _token : _token }, //posts the selected option to our ApiController file
+        data: { "source" : source, "_token": "{{ csrf_token() }}", }, //posts the selected option to our ApiController file
         success:function(result){
             $("#spinner").hide();
             $("#news").show();
