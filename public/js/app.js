@@ -4,9 +4,8 @@ $('select').on('change', function() {
     console.log(source);
     $.ajax({
         type: "POST",
-         headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
         url: "/sourceId",
-        data: { "source" : source, "_token": "{{ csrf_token() }}", }, //posts the selected option to our ApiController file
+        data: { source : source, _token: "{{ csrf_token() }}", }, //posts the selected option to our ApiController file
         success:function(result){
             $("#spinner").hide();
             $("#news").show();
