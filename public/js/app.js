@@ -1,6 +1,6 @@
 $('select').on('change', function() {
     let source = this.value;  //gets the selected news source from the news source dropdown menu
-    let _token = $('input[name="_token"]').val();
+    let _token = $('meta[name="csrf-token"]').attr('content');
     $("#spinner").show();
     $("#news").hide();
     $.ajax({
