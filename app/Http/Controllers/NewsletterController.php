@@ -18,7 +18,7 @@ class NewsletterController extends Controller
         $newsletter->email = $request->email;
         $newsletter->save();
         $details = [
-            'title' => 'Mail from SmartCode.com',
+            'title' => 'Mail from fermat to confirm your subscription',
             'body' => 'This is for testing email using smtp'
         ];
 
