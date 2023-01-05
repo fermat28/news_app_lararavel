@@ -2,7 +2,11 @@ $('select').on('change', function() {
     let source = this.value;  //gets the selected news source from the news source dropdown menu
     let _token = $('meta[name="csrf-token"]').attr('content');
     console.log(source);
+    console.log($('meta[name="csrf-token"]').attr('content'));
     $.ajax({
+         headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
         type: "POST",
         url: "/sourceId",
         data: { source : source, _token: "{{ csrf_token() }}", }, //posts the selected option to our ApiController file
