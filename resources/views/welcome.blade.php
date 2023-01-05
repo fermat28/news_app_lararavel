@@ -55,7 +55,7 @@
                 </select>
 
             </label>
-            <object id="spinner" data="spinner.svg" type="image/svg+xml" hidden></object>
+            <object id="spinner" data="{{ asset('spinner.svg')}}" type="image/svg+xml" hidden></object>
         </section>
         <div id="news">
             <br>
